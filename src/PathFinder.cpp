@@ -31,7 +31,7 @@ PathFinder::PathFinder() {
     
 }
 
-vector<Vector2> PathFinder::aStar(Vector2 start, Vector2 finish ) {
+std::vector<Vector2> PathFinder::aStar(Vector2 start, Vector2 finish ) {
     pathNode first = *new pathNode( start, 0, findHeuristic(start) );
     this->target = finish;
     this->source = start;
@@ -49,7 +49,7 @@ vector<Vector2> PathFinder::aStar(Vector2 start, Vector2 finish ) {
         scanSurround( closedList.back() );
     }
     //if you got here, there is no path to the target.
-    vector<Vector2> nullVector;
+    std::vector<Vector2> nullVector;
     return nullVector;
     
 }
@@ -72,7 +72,7 @@ void PathFinder::scanSurround( pathNode node ) {
         for ( int j = 0; j < 2; j++ ) {
             flip *= (-1);
             if (!inClosedList(node) ) {
-                openList.push(*new pathNode( temp,node.getTotal()+(summ+flip), findHeuristic(temp), node ) );
+                openList.push(*new pathNode( temp,node.getCost()+(summ+flip), findHeuristic(temp), node ) );
             }
             temp.x += mapSize;
         }
@@ -103,8 +103,8 @@ bool PathFinder::inClosedList( pathNode node ) {
     
 }
 
-vector<Vector2> PathFinder::makePath(pathNode node ) {
-    vector<Vector2> tempVect;
+std::vector<Vector2> PathFinder::makePath(pathNode node ) {
+    std::vector<Vector2> tempVect;
 
     while (node.getLocation() != source ) {
         tempVect.push_back( node.getLocation() );
@@ -112,7 +112,10 @@ vector<Vector2> PathFinder::makePath(pathNode node ) {
         }
     return tempVect;
 }
+struct GreaterThan {
+    bool operator()( pathNode &a, pathNode &b ){return a.getCost() > b.getCost(); }
 
+};
 
 
 

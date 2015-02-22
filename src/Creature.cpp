@@ -7,7 +7,7 @@
  */
 Creature::Creature() {}
 
-
+Creature::~Creature(){}
 /**
  * Reduces the creatures hit points.
  */
@@ -45,6 +45,7 @@ void Creature::_init() {
  */
 void Creature::_update(const UpdateState &us) {
     // move the creature toward the player
+//    findPath.aStar(this->getPosition(), _game->getPlayer()->getPosition() );
 }
 
 

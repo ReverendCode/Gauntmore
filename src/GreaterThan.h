@@ -9,10 +9,10 @@
 #ifndef __gauntmore_macosx__GreaterThan__
 #define __gauntmore_macosx__GreaterThan__
 #include "pathNode.h"
-#include "pathFinder.h"
+#include "PathFinder.h"
 #include "Game.h"
 
-
+class pathNode;
 class GreaterThan {
 public:
     bool operator()( pathNode &a, pathNode &b ){return a.getCost() > b.getCost(); }

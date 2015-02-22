@@ -16,6 +16,7 @@
  * Constructor
  */
 Skeleton::Skeleton(){}
+Skeleton::~Skeleton(){}
 
 
 /**

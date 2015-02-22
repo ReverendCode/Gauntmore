@@ -13,6 +13,8 @@
 #include "Map.h"
 #include "Creature.h"
 #include "Game.h"
+#include "PathFinder.h"
+#include "GreaterThan.h"
 
 class pathNode {
 public:
@@ -25,7 +27,7 @@ public:
     const int getTotal();
     void setHeuristic(int);
     void setCost(int);
-    void calculateTotal();
+//    void calculateTotal();
     void setLocation(Vector2);
     bool operator>(  pathNode& node );
     pathNode getParent();

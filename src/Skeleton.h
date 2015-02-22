@@ -16,6 +16,7 @@ DECLARE_SMART(Skeleton, spSkeleton)
 class Skeleton : public Creature{
 public:
     Skeleton();
+    ~Skeleton();
 
 private:
     void _init();
