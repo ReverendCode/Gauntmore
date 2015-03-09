@@ -82,12 +82,6 @@ public:
      *
      *
      */
-    virtual bool isPotion() = 0;
-    
-    /**
-     *
-     *
-     */
     virtual SDL_Rect getBounds() = 0;
     
     /**
@@ -95,6 +89,12 @@ public:
      *
      */
     virtual void addSprite() = 0;
+    
+    /**
+     *
+     *
+     */
+    bool isPotion() = 0;
 
 protected:
     Vector2 _location;

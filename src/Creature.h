@@ -1,5 +1,4 @@
-#ifndef __gauntmore__Creature__
-#define __gauntmore__Creature__
+#pragma once
 
 #include "Unit.h"
 #include "PathFinder.h"
@@ -17,46 +16,41 @@ public:
     
     enum Facing {up, right, down, left};
     
+    /**
+     * Returns the direction the creature should face
+     * based off a direction
+     * 
+     * @direction a pair of ints (-1, 0, 1) that we use to detemine direction
+     * 
+     * @return a Facing enum
+     */
     Facing getFacing(Vector2 direction);
     
+    /**
+     * Used to damage the player
+     */
     virtual void damage();
     
-//    Facing getFacing() {
-//        return _facing;
-//    }
-//    
-//    void setFacing(Facing facing) {
-//        _facing = facing;
-//    }
-    
-//    virtual void attack() = 0;
-//    
-//    virtual void move(Facing facing) = 0;
-
 protected:
     time_t _lastTimeAttack;
     spThing _contents;
-
     PathFinder findPath;
     CreatureMover moveQ;
-
-    /**
-     *
-     *
-     */
-    bool _alerted = false;
     
+    /**
+     * Figures out which direction the creature should move
+     *
+     * @returns a vector2 of ints (-1, 0, 1) which is used to set facing
+     */
     Vector2 moveMe();
     
     /**
-     *
-     *
+     * Gives the creature gold or a potion
      */
     void _setContents();
     
     /**
-     *
-     *
+     * Puts the creatures contents on the ground when it dies
      */
     void _dropContents();
     
@@ -77,5 +71,3 @@ protected:
      */
     virtual void _update(const UpdateState &us) = 0;
 };
-
-#endif /* defined(__gauntmore__Creature__) */
