@@ -95,7 +95,7 @@ void Creature::_dropContents() {
 void Creature::_interact() {
     int damage = _game->getPlayer()->getAttack();
     _hp -= damage;
-    if (_hp == 0) {
+    if (_hp <= 0) {
         // The creature is dead, hide it with an alpha tween.
         _dead = true;
         _view->addTween(Actor::TweenAlpha(0), 300)->setDetachActor(true);

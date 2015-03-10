@@ -49,7 +49,6 @@ void Weapon::addSprite() {
 
 
 /**
->>>>>>> origin/_steven
  * Initializes a Weapon position and sprite. Called by Unit's init() method.
  */
 void Weapon::_init() {
