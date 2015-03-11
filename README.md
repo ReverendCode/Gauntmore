@@ -2,11 +2,11 @@
 
 Gauntmore is a 2D, top down, hack-and-slash, real-time, roguelike, with procedural tile-based map generation, and permanent death.
 
-The project is being built at the University of Oregon for CIS 330 in Winter 2015.
+The project is being built at the University of Oregon for CIS 330 in Winter 2015 by Keith Hamm, David Wenzel, Benjamin Barnes, and Steven Warren.
 
 ## Compile and run the project
 
-This project uses CMake. To make compiling and running the project easier all you need to do it issues this command `./run.sh`.
+This project uses CMake. To make compiling and running the project easier, from the main gauntmore folder issue this command: `./run.sh`.
 
 ## Gameplay and Controls
 
