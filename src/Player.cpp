@@ -90,8 +90,6 @@ bool Player::updateHealth(int health) {
         _view->addTween(Actor::TweenAlpha(0), 300)->setDetachActor(true);
         _dead = true;
     }
-
-    cout << "Player HP: " << _hp << endl;
     
     return isUpdated;
 }
