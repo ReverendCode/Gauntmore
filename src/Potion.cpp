@@ -53,7 +53,7 @@ void Potion::_init() {
  * Interaction method for Potion.
  */
 void Potion::_interact() {
-    if (!isDead() && _game->getPlayer()->isDamaged()) {
+    if (_game->getPlayer()->isDamaged()) {
         // add health to player
         _game->getPlayer()->updateHealth(10);
         

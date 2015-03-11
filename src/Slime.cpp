@@ -8,7 +8,7 @@
  */
 Slime::Slime() {
     // Initialize the stats.
-    _hp = 5;
+    _hp = 6;
     _attack = 4;
     _defense = 0;
     _speed = 50;

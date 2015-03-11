@@ -50,13 +50,11 @@ void Gold::_init() {
  *  Removes sprite from the game.
  */
 void Gold::_interact() {
-    if (!isDead()) {
-        _game->updateGoldCount(_value);
-        
-        // remove sprite
-        _view->addTween(Actor::TweenAlpha(0), 300)->setDetachActor(true);
-        _dead = true;
-    }
+    _game->updateGoldCount(_value);
+    
+    // remove sprite
+    _dead = true;
+    _view->addTween(Actor::TweenAlpha(0), 300)->setDetachActor(true);
 }
 
 

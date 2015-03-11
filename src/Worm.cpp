@@ -7,7 +7,7 @@
  * Constructor. Initializes the stats
  */
 Worm::Worm() {
-    _hp = 8;
+    _hp = 9;
     _attack = 10;
     _defense = 0;
     _speed = 30;

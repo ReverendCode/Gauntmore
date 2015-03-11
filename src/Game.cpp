@@ -162,7 +162,7 @@ bool Game::isExit(Vector2 position) {
 *
 * @num is the value to update by.
 */
-void Game::updateHealth(double value) {
+void Game::updateHealth(float value) {
     _healthBar->updateHealth(value);
 }
 
@@ -373,10 +373,10 @@ void Game::_createMap() {
     // Generate things for chests
     _things.push_back(new Armor(2));
     _things.push_back(new Armor(3));
-    _things.push_back(new Weapon(2));
+    _things.push_back(new Weapon(3));
     _things.push_back(new Weapon(3));
     
-    for (int i = 0; i < 38; i++) {
+    for (int i = 0; i < 48; i++) {
         _things.push_back(new Gold);
         _things.push_back(new Potion);
         

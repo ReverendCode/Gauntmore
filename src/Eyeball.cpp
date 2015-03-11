@@ -7,7 +7,7 @@
  * Constructor. Initializes the stats
  */
 Eyeball::Eyeball() {
-    _hp = 10;
+    _hp = 9;
     _attack = 6;
     _defense = 0;
     _speed = 100;

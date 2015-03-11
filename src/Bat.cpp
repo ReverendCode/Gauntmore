@@ -7,7 +7,7 @@
  * Constructor. Initializes the stats
  */
 Bat::Bat() {
-    _hp = 2;
+    _hp = 3;
     _attack = 2;
     _defense = 0;
     _speed = 150;
