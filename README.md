@@ -17,7 +17,7 @@ Warning: this game is hard. If you simply cannot solve the maze, you can always 
 ### Menus:
  - Up/down arrow keys or WS to move between options
  - Enter/return to select an option
- - Escape to access pause menu from within the game
+ - Escape to access the pause menu from within the game
 
 ### Movement:
  - Arrow keys
