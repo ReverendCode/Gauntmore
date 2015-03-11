@@ -4,10 +4,24 @@ Gauntmore is a 2D, top down, hack-and-slash, real-time, roguelike, with procedur
 
 The project is being built at the University of Oregon for CIS 330 in Winter 2015.
 
-### Xcode Project
+## Compile and run the project
 
-To run the game from Xcode launch `gauntmore_macosx.xcodeproj`.
+This project uses CMake. To make compiling and running the project easier all you need to do it issues this command `./run.sh`.
 
-### CMake Project
+## Gameplay and Controls
 
-To run the game using on Linux do `./run.sh`.
+In the game you run around a procedurally generated maze fighting monstrous creatures, collecting gold, and trying to survive. If you can make it to the exit without dying, congratulations! Throughout the game you will be attacked by creatures that reduce your health. To recover health you can run over potions dropped by creates or found in chests. Also found in chests are weapon and armor upgrades. These increase your attack damage or reduce the amount of damage you receive.
+
+Warning: this game is hard. If you simply cannot solve the maze, you can always cheat by looking at the map printed to the console.
+
+### Menus:
+ - Up/down arrow keys or WS to move between options
+ - Enter/return to select an option
+ - Escape to access pause menu from within the game
+
+### Movement:
+ - Arrow keys
+ - WASD
+
+### Combat:
+ - Space bar to attack

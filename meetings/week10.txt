@@ -1,0 +1,10 @@
+Attendance:
+
+Keith Hamm
+David Wenzel
+Steven Warren
+Benjamin Barnes
+
+Minutes:
+
+We had several meetings over the weekend where everyone was continuing the cleanup and commenting process. Several bugs were identified and tracked down. Everyone contributed to adjusting Player and Creature stats to try to make the game more playable. It is a hard game, but our changes have made it somewhat easier. Some last minute additions were adding a New Game option to the pause menu, adjusting collision detection to reduce in appropriate collisions, and testing sound again without success.
