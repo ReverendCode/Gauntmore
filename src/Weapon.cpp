@@ -1,6 +1,6 @@
 #include "Weapon.h"
 #include "res.h"
-#include "game.h"
+#include "Game.h"
 #include "Player.h"
 
 /**
