@@ -61,7 +61,7 @@ void Weapon::_init() {
  *  Removes sprite from the game.
  */
 void Weapon::_interact() {
-    if (!isDead()) {
+    if (!isDead() && _value > _game->getPlayer()->getAttack()) {
         _game->getPlayer()->setAttack(_value);
         _game->updateWeaponCount(_value);
         

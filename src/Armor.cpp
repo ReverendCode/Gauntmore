@@ -64,7 +64,7 @@ void Armor::_init() {
  *  Removes sprite from the game.
  */
 void Armor::_interact() {
-    if (!isDead()) {
+    if (!isDead() && _value > _game->getPlayer()->getDefense()) {
         _game->getPlayer()->setDefense(_value);
         _game->updateArmorCount(_value);
         
